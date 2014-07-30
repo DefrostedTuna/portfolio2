@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	{{ HTML::style('assets/css/main.css') }}
 </head>
 <body>
@@ -10,10 +11,10 @@
 		<div class="header-mask"></div>
 		<div class="header-wrap">
 			<nav>
-				<a href="">Home</a>
-				<a href="">About</a>
-				<a href="">Showcase</a>
-				<a href="">Contact</a>
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#showcase">Showcase</a>
+				<a href="#contact">Contact</a>
 			</nav>
 			<div class="centered-container">
 				<h1><span>Rick Bennett</span></h1>
@@ -25,8 +26,8 @@
 	<div id="about" class="about-bg">
 		<div class="about-mask"></div>
 		<div class="about-wrap">
-			<h1>About me</h1>
-			<p><strong>Strong text paragraph.</strong></p>
+			<h1>Who is this guy?</h1>
+			<p><strong>I'm a web developer, plain and simple.</strong></p>
 			<p>
 				Hello, my name is Rick Bennett and I like to create things. 
 				I'm a [insert catchy words here] PHP developer based in Elizabethtown, Kentucky.
@@ -50,7 +51,7 @@
 
 	<div id="showcase" class="showcase-bg">
 		<div class="showcase-mask"></div>
-		<div class="showcase=wrap">
+		<div class="showcase-wrap">
 			<h1>Some of my work</h1>
 			<div class="work-section">
 				<span class="work-img"></span>
@@ -59,7 +60,8 @@
 				<span class="work-img"></span>
 				<span class="work-img"></span>
 				<span class="work-img"></span>
-				<span class="work-img"></span>	
+				<span class="work-img"></span>
+				<span class="work-img"></span>
 			</div>
 		</div>
 	</div>
@@ -69,6 +71,7 @@
 		<div class="contact-wrap">
 			<h1>Contact</h1>
 			<p><strong>Need to contact me?</strong> Fill out the form below and I'll get back to you as soon as I can!</p>
+			<input type="text" placeholder="Name">
 			<input type="text" placeholder="Email">
 			<input type="text" placeholder="Subject">
 			<textarea placeholder="Whatchoo need?"></textarea>
@@ -79,15 +82,16 @@
 	<div class="footer">
 		<div class="footer-wrap">
 			<nav>
-				<a href="">Home</a>
-				<a href="">About</a>
-				<a href="">Showcase</a>
-				<a href="">Contact</a>
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#showcase">Showcase</a>
+				<a href="#contact">Contact</a>
 			</nav>
-			<p>&copy Rick Bennet 2014</p>
+			<p>&copy Rick Bennett 2014</p>
 		</div>
 	</div>
 
-
+	{{ HTML::script('http://code.jquery.com/jquery-2.1.1.min.js')}}
+	{{ HTML::script('assets/js/functions.js') }}
 </body>
 </html>

@@ -1,22 +1,23 @@
 .about-bg
+	min-height: 100%
+	
+	.about-mask
 
-.about-mask
+	.about-wrap
+		+outer-container
+		padding: 5rem 1rem
+		text-align: center
 
-.about-wrap
-	+outer-container
-	padding: 5rem 1rem
-	text-align: center
+		h1
+			margin-bottom: 2rem
 
-	h1
-		margin-bottom: 2rem
-
-	p
-		+span-columns(8)
-		+shift(2)
-		//screen sizes
-		+media($small-screen-only)
-			+span-columns(12)
-			+shift(0)
-		+media($medium-screen-only)
-			+span-columns(10)
-			+shift(1)
+		p
+			+span-columns(8)
+			+shift(2)
+			//screen sizes
+			+media($small-screen-only)
+				+span-columns(12)
+				+shift(0)
+			+media($medium-screen-only)
+				+span-columns(10)
+				+shift(1)

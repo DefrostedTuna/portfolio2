@@ -208,44 +208,129 @@ input[type="submit"] {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.about-wrap {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5rem 1rem;
-  text-align: center; }
-  .about-wrap:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .about-wrap h1 {
-    margin-bottom: 2rem; }
-  .about-wrap p {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%; }
-    .about-wrap p:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 40em) {
-      .about-wrap p {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        margin-left: 0%; }
-        .about-wrap p:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 40.0625em) and (max-width: 60em) {
-      .about-wrap p {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 82.94039%;
-        margin-left: 8.5298%; }
-        .about-wrap p:last-child {
-          margin-right: 0; } }
+.about-bg {
+  min-height: 100%; }
+  .about-bg .about-wrap {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem 1rem;
+    text-align: center; }
+    .about-bg .about-wrap:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .about-bg .about-wrap h1 {
+      margin-bottom: 2rem; }
+    .about-bg .about-wrap p {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%; }
+      .about-bg .about-wrap p:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 40em) {
+        .about-bg .about-wrap p {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          margin-left: 0%; }
+          .about-bg .about-wrap p:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 40.0625em) and (max-width: 60em) {
+        .about-bg .about-wrap p {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 82.94039%;
+          margin-left: 8.5298%; }
+          .about-bg .about-wrap p:last-child {
+            margin-right: 0; } }
+
+.contact-bg {
+  min-height: 100%; }
+  .contact-bg .contact-wrap {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem 1rem;
+    text-align: center; }
+    .contact-bg .contact-wrap:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .contact-bg .contact-wrap h1 {
+      margin-bottom: 3rem; }
+    .contact-bg .contact-wrap p {
+      margin-bottom: 2rem; }
+    .contact-bg .contact-wrap input[type="text"] {
+      box-shadow: 1px 1px 1px #cccccc;
+      margin-bottom: 1rem;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 8.5298%; }
+      .contact-bg .contact-wrap input[type="text"]:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 40em) {
+        .contact-bg .contact-wrap input[type="text"] {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          margin-left: 0%; }
+          .contact-bg .contact-wrap input[type="text"]:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 40.0625em) and (max-width: 60em) {
+        .contact-bg .contact-wrap input[type="text"] {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 65.88078%;
+          margin-left: 8.5298%; }
+          .contact-bg .contact-wrap input[type="text"]:last-child {
+            margin-right: 0; } }
+    .contact-bg .contact-wrap textarea {
+      box-shadow: 1px 1px 1px #cccccc;
+      min-height: 200px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .contact-bg .contact-wrap textarea:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 40em) {
+        .contact-bg .contact-wrap textarea {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          margin-left: 0%; }
+          .contact-bg .contact-wrap textarea:last-child {
+            margin-right: 0; } }
+    .contact-bg .contact-wrap input[type="submit"] {
+      box-shadow: 1px 1px 1px #cccccc;
+      margin-top: 2rem;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .contact-bg .contact-wrap input[type="submit"]:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 40em) {
+        .contact-bg .contact-wrap input[type="submit"] {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          margin-left: 0%; }
+          .contact-bg .contact-wrap input[type="submit"]:last-child {
+            margin-right: 0; } }
 
 .header-bg {
   position: relative;
@@ -264,7 +349,8 @@ input[type="submit"] {
     left: 0;
     background: rgba(0, 0, 0, 0.3); }
   .header-bg .header-wrap {
-    color: white; }
+    color: white;
+    text-shadow: 2px 2px 5px gray; }
     .header-bg .header-wrap nav {
       position: relative;
       z-index: 1;
@@ -281,8 +367,7 @@ input[type="submit"] {
         margin: 0.5rem 1rem;
         padding: 0.5rem 1rem;
         color: white;
-        text-align: center;
-        text-shadow: 2px 2px 5px gray; }
+        text-align: center; }
         @media screen and (max-width: 40em) {
           .header-bg .header-wrap nav a {
             display: inline-block;
@@ -298,8 +383,7 @@ input[type="submit"] {
       left: 0;
       text-align: center;
       font-size: 3rem;
-      font-weight: bold;
-      text-shadow: 2px 2px 5px gray; }
+      font-weight: bold; }
       @media screen and (max-width: 40em) {
         .header-bg .header-wrap .centered-container {
           position: absolute;
@@ -316,6 +400,88 @@ input[type="submit"] {
         font-size: 1.3rem;
         margin-top: 1.7rem;
         display: inline-block; }
+
+.showcase-bg {
+  position: relative;
+  z-index: -2;
+  background-image: url("../img/113H.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  box-shadow: inset 0 -4px 20px -2px gray;
+  min-height: 100%; }
+  .showcase-bg .showcase-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.3); }
+  .showcase-bg .showcase-wrap {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-shadow: 2px 2px 5px gray;
+    text-align: center;
+    padding: 5rem 1rem; }
+    .showcase-bg .showcase-wrap:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .showcase-bg .showcase-wrap h1 {
+      margin-bottom: 4rem; }
+    .showcase-bg .showcase-wrap .work-img {
+      height: 200px;
+      width: 200px;
+      display: inline-block;
+      margin: 0.2rem;
+      border: 2px solid #eeeeee;
+      background-image: url("http://lorempixel.com/200/200/"); }
+      @media screen and (max-width: 40em) {
+        .showcase-bg .showcase-wrap .work-img {
+          height: 150px;
+          width: 150px; } }
+
+.footer {
+  background-image: url("../img/brushed.png");
+  box-shadow: 0 2px 10px 2px gray; }
+  .footer .footer-wrap {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .footer .footer-wrap:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .footer .footer-wrap nav {
+      float: right;
+      padding: 1rem 0.5rem 1.5rem;
+      font-weight: bold; }
+      @media screen and (max-width: 40em) {
+        .footer .footer-wrap nav {
+          float: none; } }
+      .footer .footer-wrap nav a {
+        display: inline-block;
+        color: #555555;
+        margin: 0.5rem 0.5rem;
+        padding: 0.5rem 1rem; }
+        @media screen and (max-width: 40em) {
+          .footer .footer-wrap nav a {
+            display: block;
+            text-align: center; } }
+        .footer .footer-wrap nav a:hover {
+          color: #cccccc;
+          background: rgba(0, 0, 0, 0.3);
+          border-radius: 5px; }
+    .footer .footer-wrap p {
+      padding: 2rem 0.5rem; }
+      @media screen and (max-width: 40em) {
+        .footer .footer-wrap p {
+          text-align: center;
+          padding: 1rem;
+          margin: auto; } }
 
 body, html {
   margin: 0;
