@@ -209,7 +209,9 @@ input[type="submit"] {
   box-sizing: border-box; }
 
 .about-bg {
-  min-height: 100%; }
+  min-height: 100%;
+  background-image: url("../img/ricepaper.png");
+  box-shadow: 0 4px 20px 2px gray; }
   .about-bg .about-wrap {
     max-width: 68em;
     margin-left: auto;
@@ -220,8 +222,12 @@ input[type="submit"] {
       content: "";
       display: table;
       clear: both; }
-    .about-bg .about-wrap h1 {
-      margin-bottom: 2rem; }
+    .about-bg .about-wrap .about-headshot {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      background: yellow;
+      margin: 2rem; }
     .about-bg .about-wrap p {
       float: left;
       display: block;
@@ -250,7 +256,8 @@ input[type="submit"] {
             margin-right: 0; } }
 
 .contact-bg {
-  min-height: 100%; }
+  min-height: 100%;
+  background-image: url("../img/ricepaper.png"); }
   .contact-bg .contact-wrap {
     max-width: 68em;
     margin-left: auto;
@@ -461,7 +468,8 @@ input[type="submit"] {
       font-weight: bold; }
       @media screen and (max-width: 40em) {
         .footer .footer-wrap nav {
-          float: none; } }
+          float: none;
+          padding: 1rem 0.5rem 0rem; } }
       .footer .footer-wrap nav a {
         display: inline-block;
         color: #555555;
@@ -475,12 +483,17 @@ input[type="submit"] {
           color: #cccccc;
           background: rgba(0, 0, 0, 0.3);
           border-radius: 5px; }
+    .footer .footer-wrap hr {
+      display: none; }
+      @media screen and (max-width: 40em) {
+        .footer .footer-wrap hr {
+          display: block; } }
     .footer .footer-wrap p {
-      padding: 2rem 0.5rem; }
+      padding: 2rem 1rem; }
       @media screen and (max-width: 40em) {
         .footer .footer-wrap p {
           text-align: center;
-          padding: 1rem;
+          padding: 0rem 1rem 1.5rem;
           margin: auto; } }
 
 body, html {

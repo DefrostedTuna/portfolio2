@@ -15,6 +15,7 @@
 				<a href="#about">About</a>
 				<a href="#showcase">Showcase</a>
 				<a href="#contact">Contact</a>
+				<a href="http://rickbennettcoding.com/blog">Blog</a>
 			</nav>
 			<div class="centered-container">
 				<h1><span>Rick Bennett</span></h1>
@@ -27,10 +28,14 @@
 		<div class="about-mask"></div>
 		<div class="about-wrap">
 			<h1>Who is this guy?</h1>
+			<img class="about-headshot" src="">
 			<p><strong>I'm a web developer, plain and simple.</strong></p>
 			<p>
 				Hello, my name is Rick Bennett and I like to create things. 
-				I'm a [insert catchy words here] PHP developer based in Elizabethtown, Kentucky.
+				I'm an effeciency driven [insert catchy words here] PHP developer based in Elizabethtown, Kentucky.
+				Web developent (or rather programming in general it seems) is a huge passion of mine.
+				At almost any point of the day, you'll find me picking apart technology at its core simply to understand how and why it works.
+				<strong>talk about effeciency and stuffs</strong>
 				
 			</p>
 			<p>
@@ -73,9 +78,9 @@
 			<p><strong>Need to contact me?</strong> Fill out the form below and I'll get back to you as soon as I can!</p>
 			<input type="text" placeholder="Name">
 			<input type="text" placeholder="Email">
-			<input type="text" placeholder="Subject">
-			<textarea placeholder="Whatchoo need?"></textarea>
-			<input type="submit" value="&#9993; Send da Emailz, yo!">
+			<input type="text" placeholder="Subject (optional)">
+			<textarea placeholder="What can I do for you?"></textarea>
+			<input type="submit" value="Drop me a line!">
 		</div>
 	</div>
 
@@ -86,7 +91,9 @@
 				<a href="#about">About</a>
 				<a href="#showcase">Showcase</a>
 				<a href="#contact">Contact</a>
+				<a href="http://rickbennettcoding.com/blog">Blog</a>
 			</nav>
+			<hr>
 			<p>&copy Rick Bennett 2014</p>
 		</div>
 	</div>

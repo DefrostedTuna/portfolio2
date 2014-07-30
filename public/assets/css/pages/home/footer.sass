@@ -11,6 +11,7 @@
 			font-weight: bold
 			+media($small-screen-only)
 				float: none
+				padding: 1rem 0.5rem 0rem
 
 			a
 				display: inline-block
@@ -25,9 +26,14 @@
 					background: rgba(0,0,0,0.3)
 					border-radius: 5px
 					
+		hr
+			display: none
+			+media($small-screen-only)
+				display: block
+
 		p
-			padding: 2rem 0.5rem
+			padding: 2rem 1rem
 			+media($small-screen-only)
 				text-align: center
-				padding: 1rem
+				padding: 0rem 1rem 1.5rem
 				margin: auto
