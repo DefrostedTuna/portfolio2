@@ -1,9 +1,6 @@
-.contact-bg
+.contact-section
 	min-height: 100%
 	background-image: url('../img/ricepaper.png')
-	
-	.contact-mask
-		//rules here
 		
 	.contact-wrap
 		+outer-container
@@ -28,7 +25,8 @@
 			+media($medium-screen-only)
 				+span-columns(8)
 				+shift(1)
-			
+			//-----------------------
+
 		textarea
 			box-shadow: 1px 1px 1px #ccc
 			min-height: 200px
@@ -38,10 +36,10 @@
 			+media($small-screen-only)
 				+span-columns(12)
 				+shift(0)
-				
+			//---------------------------	
 				
 		input[type="submit"]
-			box-shadow: 1px 1px 1px #ccc
+			box-shadow: 3px 3px 2px #ccc
 			margin-top: 2rem
 			+span-columns(10)
 			+shift(1)
@@ -49,3 +47,9 @@
 			+media($small-screen-only)
 				+span-columns(12)
 				+shift(0)
+			//------------------------
+		
+		input[type="submit"]:active
+			box-shadow: 0px 0px 0px #ccc
+
+
