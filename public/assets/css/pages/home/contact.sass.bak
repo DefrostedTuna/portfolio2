@@ -20,18 +20,36 @@
 	.form-field
 		+span-columns(6)
 		+shift(1)
+		//screen sizes-------------
+		+media($small-screen-only)
+			+span-columns(12)
+			+shift(0)
+		+media($medium-screen-only)
+			+span-columns(8)
+			+shift(1)
+		//-------------------------
 
 	textarea
 		box-shadow: 1px 1px 1px #ccc
 		min-height: 200px
 		+span-columns(10)
 		+shift(1)
+		//screen sizes------------
+		+media($small-screen-only)
+			+span-columns(12)
+			+shift(0)
+		//------------------------	
 			
 	input[type="submit"]
 		box-shadow: 3px 3px 2px #ccc
 		margin-top: 2rem
 		+span-columns(10)
 		+shift(1)
+		//screen sizes------------
+		+media($small-screen-only)
+			+span-columns(12)
+			+shift(0)
+		//------------------------
 		&:active
 			box-shadow: 0px 0px 0px #ccc
 	
@@ -43,27 +61,3 @@
 			+display(inline-block)
 			+size(50px)
 			margin: 0.5rem
-
-// Media Queries //
-
-// Small Screen
-+media($small-screen-only)
-	.contact-wrap
-		.form-field
-			+span-columns(12)
-			+shift(0)
-
-		textarea
-			+span-columns(12)
-			+shift(0)
-		
-		input[type='submit']
-			+span-columns(12)
-			+shift(0)
-
-// Medium Screen
-+media($medium-screen-only)
-	.contact-wrap
-		.form-field
-			+span-columns(8)
-			+shift(1)

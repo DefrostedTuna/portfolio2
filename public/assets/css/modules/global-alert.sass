@@ -1,0 +1,21 @@
+.global-alert
+	+position(fixed)
+	z-index: 99
+	top: 15%
+	left: 50%
+	width: 600px
+	margin-left: -300px
+	text-align: center
+	color: #4F4F4F
+	font-weight: bold
+	background-color: #A0D3E8
+	border: 1px solid #74BFDD
+	box-shadow: 2px 2px 2px gray
+	padding: 0.7rem 3rem
+	&:hover
+		cursor: pointer
+		box-shadow: 2px 2px 5px gray
+	+media($small-screen-only)
+		width: 96%
+		left: 2%
+		margin-left: 0

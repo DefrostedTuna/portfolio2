@@ -12,3 +12,7 @@ $(function() {
     }
   });
 });
+
+$(".global-alert").click(function(){
+	$(".global-alert").fadeOut(500);
+});

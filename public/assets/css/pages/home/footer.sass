@@ -9,18 +9,12 @@
 			float: right
 			padding: 1rem 0.5rem 1.5rem
 			font-weight: bold
-			+media($small-screen-only)
-				float: none
-				padding: 1rem 0.5rem 0rem
 
 			a
 				display: inline-block
 				color: #555
 				margin: 0.5rem 0.5rem
 				padding: 0.5rem 1rem
-				+media($small-screen-only)
-					display: block
-					text-align: center
 				&:hover
 					color: #ccc
 					background: rgba(0,0,0,0.3)
@@ -28,12 +22,26 @@
 					
 		hr
 			display: none
-			+media($small-screen-only)
-				display: block
 
 		p
 			padding: 2rem 1rem
-			+media($small-screen-only)
+	
+// Media Queries
+
+// Small Screen
++media($small-screen-only)
+	.footer-wrap
+		nav
+			float: none
+			padding: 1rem 0.5rem 0rem	
+			a
+				display: block
 				text-align: center
-				padding: 0rem 1rem 1.5rem
-				margin: auto
+		
+		hr
+			display: block
+	
+		p
+			text-align: center
+			padding: 0rem 1rem 1.5rem
+			margin: auto

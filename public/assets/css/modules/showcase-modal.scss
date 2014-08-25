@@ -25,7 +25,20 @@
   img {
 	  border-radius: 3px;
 	  padding: 3px;
-	  margin: 3px;
+	  margin: 10px;
+	  max-width: 60%;
+	  
+	  @include media($small-screen-only) {
+		  max-width: 100%;
+		  margin: 10px auto;
+		  text-align: center;
+	  }
+	  @include media($medium-screen-only) {
+		  max-width: 80%;
+		  margin: 10px auto;
+		  text-align: center;
+		  float: none !important;
+	  }
   }
 	
   img:hover {
@@ -48,7 +61,7 @@
     @include position(fixed, 0px 0px 0px 0px);
     background: rgba(0, 0, 0,  .85);
     opacity: 0;
-    text-align: left;
+    //text-align: left;
     visibility: hidden;
     z-index: 99999999999;
 
@@ -98,6 +111,7 @@
     margin-top: .6em;
 	margin-bottom: 1rem;
 	@include outer-container;
+	color: black;
 
     @include media($medium-screen-up) {
       padding: $modal-padding;
@@ -121,20 +135,35 @@
       padding: 0;
       text-align: left;
 
-      &.intro {
-        color: $blue;
-        line-height: 1.6em;
-      }
-
       &.body { 
         color: $base-font-color;
         line-height: 1.45em;
 
-        @include media($medium-screen-only) {
-          @include columns(2 8em);
-        }
+        //@include media($medium-screen-only) {
+          //@include columns(2 8em);
+        //}
       }
     }
+	  
+	.intro {
+		color: $blue;
+		line-height: 1.6em;
+		font-weight: bold;
+	}
+	  
+	.intro-features {
+		color: black;
+		font-weight: bold;
+		list-style: initial;
+		margin-left: 1rem;
+		display: inline-block;
+		
+		li {
+			float: left;
+			margin-right: 1.5rem;
+		}
+	}
+
 
     a.cta {
       color: white;

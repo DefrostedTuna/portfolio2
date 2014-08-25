@@ -14,4 +14,11 @@
 Route::get('/', [
 	'as' => 'home',
 	'uses' => 'HomeController@getIndex'
-]);
+	]);
+
+Route::post('/contact', [
+	'as' => 'post-contact',
+	'uses' => 'HomeController@postContact'
+	])
+	//filters//
+	->before('csrf');

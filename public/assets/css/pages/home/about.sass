@@ -3,26 +3,35 @@
 	background-image: url('../img/ricepaper.png')
 	box-shadow: 0 4px 20px 2px gray
 	
+.about-wrap
+	+outer-container
+	padding: 3rem 1rem
+	text-align: center
+
+	.about-headshot
+		+size(200px)
+		border-radius: 50%
+		background: yellow
+		margin: 2rem
+
+
+	p
+		+span-columns(10)
+		+shift(1)
+		font-size: 1.5rem
+	
+// Media Queries
+
+// Small Screen
++media($small-screen-only)
 	.about-wrap
-		+outer-container
-		padding: 5rem 1rem
-		text-align: center
-
-		.about-headshot
-			+size(200px)
-			border-radius: 50%
-			background: yellow
-			margin: 2rem
-
-
 		p
-			+span-columns(8)
-			+shift(2)
-			//screen sizes
-			+media($small-screen-only)
-				+span-columns(12)
-				+shift(0)
-			+media($medium-screen-only)
-				+span-columns(10)
-				+shift(1)
-			//------------------------
+			+span-columns(12)
+			+shift(0)
+
+// Medium Screen
++media($medium-screen-only)
+	.about-wrap
+		p
+			+span-columns(10)
+			+shift(1)

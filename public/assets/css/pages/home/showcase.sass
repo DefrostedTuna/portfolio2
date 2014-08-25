@@ -7,53 +7,66 @@
 	box-shadow: inset 0 -4px 20px -2px gray
 	min-height: 100%
 		
-	.showcase-wrap
-		+outer-container
-		color: white
-		text-align: center
-		padding: 5rem 1rem
+.showcase-wrap
+	+outer-container
+	color: white
+	text-align: center
+	padding: 3rem 1rem
+
+	.headline
+		margin-bottom: 4rem
+		text-shadow: 2px 2px 5px gray
 	
-		h1
-			margin-bottom: 4rem
-	
-		.work-img
-			+position(relative)
-			+size(250px 156px)
-			+display(inline-block)
-			margin: 0.2rem
-			border: 3px solid #eee
-			border-radius: 2px
-			background-image: url('http://lorempixel.com/250/156/')
-			overflow: hidden
-			+perspective(300)
-			//screen sizes---------------
-			+media($small-screen-only)
-				+size(150px 100px)
-			//-------------------------
+	.work-img
+		+position(relative)
+		+size(440px 275px)
+		+display(inline-block)
+		margin: 0.2rem
+		border: 3px solid #eee
+		border-radius: 2px
+		background-size: cover
+		background-position: center
+		overflow: hidden
+		+perspective(300)
 				
-			.work-img-overlay
-				+position(absolute, 0)
-				z-index: 2
-				background: rgba(0, 0, 0, 0.5)
-				color: white
-				height: 100%
-				opacity: 0
-				text-align: center
-				+display(flex)
-				+transition(500ms)
-				+align-items(center)
-				+justify-content(space-around)
-				
-				strong
-					margin-top: -15px
-					padding: 0.3rem
-					font-size: 1.5rem
-					text-shadow: 2px 2px 5px gray
-					+media($small-screen-only)
-						font-size: 1rem
+		.work-img-overlay
+			+position(absolute, 0)
+			+display(flex)
+			padding: 0.5rem 0.3rem
+			z-index: 2
+			height: 100%
+			background: rgba(0, 0, 0, 0.6)
+			color: white
+			text-align: center
+			+align-items(center)
+			+justify-content(space-around)
+			opacity: 0
+			+transition(500ms)
+			
+			strong
+				margin-top: -15px
+				padding: 0.3rem
+				font-size: 1.5rem
+				text-shadow: 2px 2px 5px gray
+			
 			&:hover
-				box-shadow: 2px 2px 10px gray
-					
-			&:hover .work-img-overlay
 				cursor: pointer
 				opacity: 1
+		
+		&:hover
+			box-shadow: 2px 2px 10px gray
+
+// Media Queries
+
+// Small Screen
++media($small-screen-only)
+	.showcase-wrap
+		.work-img
+			width: 95%
+	
+	
+// Medium Screen
++media($medium-screen-only)
+	.showcase-wrap
+		.work-img
+			+size(280px 175px)
