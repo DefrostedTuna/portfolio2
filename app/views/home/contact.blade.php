@@ -59,9 +59,11 @@
 		<!-- Social Media Stuffs -->
 		<ul class="contact-icons">
 			<li>
+				<!-- Github -->
 				<a href="https://github.com/DefrostedTuna"><img src="assets/img/github.png"></a>
 			</li>
 			<li>
+				<!-- Linkedin -->
 				<a href="https://www.linkedin.com/pub/rick-bennett/85/106/318/"><img src="assets/img/linkedin.png"></a>
 			</li>
 		</ul>

@@ -2,10 +2,12 @@
 
 class HomeController extends BaseController {
 
+	// Homepage
 	public function getIndex() {
 		return View::make('index');
 	}
 	
+	// Contact form processing
 	public function postContact() {
 		$validator = Validator::make(Input::all(), [
 			'name' 		=> 'required|min:3',

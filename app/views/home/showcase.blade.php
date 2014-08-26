@@ -3,12 +3,14 @@
 		
 		<h1 class="headline">Some of my work</h1>
 		
+		<!-- Thumbs -->
 		<div class="work-section">
 			@include('showcase.free-company.free-company-thumb')
 			@include('showcase.blog.blog-thumb')
 			@include('showcase.checklist.checklist-thumb')
 		</div>
-
+		
+		<!-- Modals -->
 		<div class="showcase-modals">
 			@include('showcase.free-company.free-company-modal')
 			@include('showcase.blog.blog-modal')
